@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { useToast } from "./ui/use-toast";
-import { Textarea } from "./ui/textarea";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -15,29 +14,12 @@ const ContactForm = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
-    // Track form submission in GTM
-    if (window.dataLayer) {
-      window.dataLayer.push({
-        event: 'form_submission',
-        form_name: 'contact_form',
-        form_data: {
-          name: formData.name,
-          email: formData.email,
-          company: formData.company,
-          // Excluding message for privacy
-        }
-      });
-    }
-
-    // Log the submission for debugging
+    // Here you would typically send the data to your backend
     console.log("Form submitted:", formData);
-    
     toast({
       title: "Thanks for reaching out!",
       description: "We'll get back to you within 24 hours.",
     });
-    
     setFormData({ name: "", email: "", company: "", message: "" });
   };
 
@@ -90,13 +72,13 @@ const ContactForm = () => {
           </div>
           <div>
             <label className="block text-sm font-medium mb-2">Message</label>
-            <Textarea
+            <textarea
               required
               value={formData.message}
               onChange={(e) =>
                 setFormData({ ...formData, message: e.target.value })
               }
-              className="w-full"
+              className="w-full px-3 py-2 border rounded-md"
               rows={4}
               placeholder="Tell us about your goals"
             />
