@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Index from "./pages/Index";
 import Services from "./pages/Services";
 import CaseStudies from "./pages/CaseStudies";
+import Packages from "./pages/Packages";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/services" element={<Services />} />
           <Route path="/case-studies" element={<CaseStudies />} />
+          <Route path="/packages" element={<Packages />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
