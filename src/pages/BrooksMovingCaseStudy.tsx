@@ -57,7 +57,7 @@ const BrooksMovingCaseStudy = () => {
                 </a>
               </div>
               <div>
-                <h3 className="font-medium text-gray-700 mb-2">Monthly Investment</h3>
+                <h3 className="font-medium text-gray-700 mb-2">Monthly Campaign Spend</h3>
                 <p className="text-gray-600">$17,500</p>
               </div>
             </div>
