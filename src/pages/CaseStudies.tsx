@@ -20,7 +20,6 @@ const CaseStudies = () => {
       ],
       website: "https://brooksmovingandhauling.com/",
       spend: "$17,500 monthly",
-      managementFee: "$3,000",
       region: "South Florida",
       path: "/case-studies/brooks-moving"
     },
@@ -92,13 +91,7 @@ const CaseStudies = () => {
                 
                 {study.spend && (
                   <div className="text-sm text-gray-600 mb-2">
-                    Monthly Spend: {study.spend}
-                  </div>
-                )}
-                
-                {study.managementFee && (
-                  <div className="text-sm text-gray-600 mb-2">
-                    Management Fee: {study.managementFee}
+                    Monthly Campaign Spend: {study.spend}
                   </div>
                 )}
                 

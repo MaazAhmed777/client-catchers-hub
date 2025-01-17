@@ -44,8 +44,7 @@ const Testimonials = () => {
               </div>
 
               <div className="space-y-2 text-sm text-gray-600">
-                <p>• Monthly Ad Spend: $17,500</p>
-                <p>• Management Fee: $3,000</p>
+                <p>• Monthly Campaign Spend: $17,500</p>
                 <p>• Region: South Florida</p>
                 <p>• Conversion Tracking: Forms & Calls</p>
               </div>
