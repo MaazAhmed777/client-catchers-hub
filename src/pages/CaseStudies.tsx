@@ -1,8 +1,11 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useNavigate } from 'react-router-dom';
 
 const CaseStudies = () => {
+  const navigate = useNavigate();
+  
   const caseStudies = [
     {
       client: "Brooks Moving and Hauling",
@@ -18,7 +21,8 @@ const CaseStudies = () => {
       website: "https://brooksmovingandhauling.com/",
       spend: "$17,500 monthly",
       managementFee: "$3,000",
-      region: "South Florida"
+      region: "South Florida",
+      path: "/case-studies/brooks-moving"
     },
     {
       client: "TechStart Solutions",
@@ -104,7 +108,11 @@ const CaseStudies = () => {
                   </div>
                 )}
                 
-                <Button variant="link" className="group">
+                <Button 
+                  variant="link" 
+                  className="group"
+                  onClick={() => study.path && navigate(study.path)}
+                >
                   View Case Study
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Button>
