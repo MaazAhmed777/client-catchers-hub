@@ -5,6 +5,22 @@ import { ArrowRight } from "lucide-react";
 const CaseStudies = () => {
   const caseStudies = [
     {
+      client: "Brooks Moving and Hauling",
+      industry: "Relocations & Moving",
+      result: "31.2% Click-to-Conversion Rate",
+      description: "Implemented targeted campaigns in South Florida that resulted in significant improvements in lead quality and average order value.",
+      metrics: [
+        "44% Lead to Gig conversion",
+        "23% increase in AOV",
+        "$105 CPL",
+        "Form & Call tracking"
+      ],
+      website: "https://brooksmovingandhauling.com/",
+      spend: "$17,500 monthly",
+      managementFee: "$3,000",
+      region: "South Florida"
+    },
+    {
       client: "TechStart Solutions",
       industry: "SaaS",
       result: "250% increase in qualified leads",
@@ -61,6 +77,32 @@ const CaseStudies = () => {
                     </div>
                   ))}
                 </div>
+
+                {study.website && (
+                  <div className="text-sm text-gray-600 mb-4">
+                    <a href={study.website} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                      Visit Website
+                    </a>
+                  </div>
+                )}
+                
+                {study.spend && (
+                  <div className="text-sm text-gray-600 mb-2">
+                    Monthly Spend: {study.spend}
+                  </div>
+                )}
+                
+                {study.managementFee && (
+                  <div className="text-sm text-gray-600 mb-2">
+                    Management Fee: {study.managementFee}
+                  </div>
+                )}
+                
+                {study.region && (
+                  <div className="text-sm text-gray-600 mb-4">
+                    Region: {study.region}
+                  </div>
+                )}
                 
                 <Button variant="link" className="group">
                   View Case Study
