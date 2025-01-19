@@ -22,21 +22,7 @@ const CaseStudies = () => {
       spend: "$17,500 monthly",
       region: "South Florida",
       path: "/case-studies/brooks-moving"
-    },
-    {
-      client: "TechStart Solutions",
-      industry: "SaaS",
-      result: "250% increase in qualified leads",
-      description: "Implemented a comprehensive digital marketing strategy that transformed their lead generation process.",
-      metrics: ["3x ROI", "150% traffic increase", "45% lower CPA"],
-    },
-    {
-      client: "FinServe Pro",
-      industry: "Financial Services",
-      result: "180% conversion rate improvement",
-      description: "Developed a targeted content strategy that significantly improved their conversion rates.",
-      metrics: ["2x conversions", "40% lower CAC", "90% client satisfaction"],
-    },
+    }
   ];
 
   return (
@@ -55,7 +41,7 @@ const CaseStudies = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-8 max-w-3xl mx-auto">
             {caseStudies.map((study, index) => (
               <Card key={index} className="p-8 glass-card hover-lift">
                 <div className="mb-6">
