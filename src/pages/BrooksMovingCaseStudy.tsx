@@ -145,7 +145,7 @@ const BrooksMovingCaseStudy = () => {
                     <TableCell>Significantly above industry average, indicating highly targeted traffic</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell>Lead-to-Gig Conversion</TableCell>
+                    <TableCell>Lead-to-Job Conversion</TableCell>
                     <TableCell>44%</TableCell>
                     <TableCell>Strong indicator of lead quality and effective targeting</TableCell>
                   </TableRow>

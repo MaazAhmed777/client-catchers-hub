@@ -13,7 +13,7 @@ const CaseStudies = () => {
       result: "31.2% Click-to-Conversion Rate",
       description: "Implemented targeted campaigns in South Florida that resulted in significant improvements in lead quality and average order value.",
       metrics: [
-        "44% Lead to Gig conversion",
+        "44% Lead to Job conversion",
         "23% increase in AOV",
         "$105 CPL",
         "Form & Call tracking"
@@ -29,13 +29,6 @@ const CaseStudies = () => {
       result: "250% increase in qualified leads",
       description: "Implemented a comprehensive digital marketing strategy that transformed their lead generation process.",
       metrics: ["3x ROI", "150% traffic increase", "45% lower CPA"],
-    },
-    {
-      client: "GrowthMax Retail",
-      industry: "E-commerce",
-      result: "400% revenue growth",
-      description: "Optimized their e-commerce funnel and scaled their paid advertising campaigns effectively.",
-      metrics: ["4x revenue", "200% ROAS", "65% repeat customers"],
     },
     {
       client: "FinServe Pro",
