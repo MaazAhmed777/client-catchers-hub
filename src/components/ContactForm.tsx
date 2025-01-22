@@ -16,16 +16,16 @@ const ContactForm = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Replace YOUR_GOOGLE_FORM_ID with the actual ID from your Google Form
-    const googleFormUrl = "https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_ID/formResponse";
+    // Get your form ID from the URL when you click "Send" on your Google Form
+    const googleFormUrl = "https://docs.google.com/forms/d/e/[YOUR-FORM-ID]/formResponse";
     
     // Create form data object
     const formDataObj = new FormData();
-    // Replace entry.XXXXX with your actual Google Form field IDs
-    formDataObj.append("entry.1234567890", formData.name); // Name field
-    formDataObj.append("entry.0987654321", formData.email); // Email field
-    formDataObj.append("entry.1111111111", formData.company); // Company field
-    formDataObj.append("entry.2222222222", formData.message); // Message field
+    // Replace these entry IDs with the ones you found in the form HTML
+    formDataObj.append("entry.[YOUR-NAME-ENTRY-ID]", formData.name);
+    formDataObj.append("entry.[YOUR-EMAIL-ENTRY-ID]", formData.email);
+    formDataObj.append("entry.[YOUR-COMPANY-ENTRY-ID]", formData.company);
+    formDataObj.append("entry.[YOUR-MESSAGE-ENTRY-ID]", formData.message);
 
     try {
       // Submit to Google Form
