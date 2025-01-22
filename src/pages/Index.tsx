@@ -7,7 +7,7 @@ import TagManager from "react-gtm-module";
 
 const Index = () => {
   useEffect(() => {
-    TagManager.initialize({ gtmId: 'GTM-XXXXXXX' }); // Replace with your GTM ID
+    TagManager.initialize({ gtmId: 'GTM-K7Q7BSLX' });
   }, []);
 
   return (
