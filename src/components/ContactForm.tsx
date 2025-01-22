@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { useToast } from "./ui/use-toast";
+import { Textarea } from "./ui/textarea";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -12,15 +13,43 @@ const ContactForm = () => {
   });
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the data to your backend
-    console.log("Form submitted:", formData);
-    toast({
-      title: "Thanks for reaching out!",
-      description: "We'll get back to you within 24 hours.",
-    });
-    setFormData({ name: "", email: "", company: "", message: "" });
+    
+    // Replace YOUR_GOOGLE_FORM_ID with the actual ID from your Google Form
+    const googleFormUrl = "https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_ID/formResponse";
+    
+    // Create form data object
+    const formDataObj = new FormData();
+    // Replace entry.XXXXX with your actual Google Form field IDs
+    formDataObj.append("entry.1234567890", formData.name); // Name field
+    formDataObj.append("entry.0987654321", formData.email); // Email field
+    formDataObj.append("entry.1111111111", formData.company); // Company field
+    formDataObj.append("entry.2222222222", formData.message); // Message field
+
+    try {
+      // Submit to Google Form
+      const response = await fetch(googleFormUrl, {
+        method: "POST",
+        mode: "no-cors",
+        body: formDataObj,
+      });
+
+      // Show success message
+      toast({
+        title: "Thanks for reaching out!",
+        description: "We'll get back to you within 24 hours.",
+      });
+      
+      // Clear form
+      setFormData({ name: "", email: "", company: "", message: "" });
+    } catch (error) {
+      toast({
+        title: "Something went wrong",
+        description: "Please try again later.",
+        variant: "destructive",
+      });
+    }
   };
 
   return (
@@ -72,13 +101,13 @@ const ContactForm = () => {
           </div>
           <div>
             <label className="block text-sm font-medium mb-2">Message</label>
-            <textarea
+            <Textarea
               required
               value={formData.message}
               onChange={(e) =>
                 setFormData({ ...formData, message: e.target.value })
               }
-              className="w-full px-3 py-2 border rounded-md"
+              className="w-full"
               rows={4}
               placeholder="Tell us about your goals"
             />
