@@ -9,6 +9,7 @@ const ContactForm = () => {
     name: "",
     email: "",
     company: "",
+    companyUrl: "",
     message: "",
   });
   const { toast } = useToast();
@@ -25,6 +26,7 @@ const ContactForm = () => {
     formDataObj.append("entry.[YOUR-NAME-ENTRY-ID]", formData.name);
     formDataObj.append("entry.[YOUR-EMAIL-ENTRY-ID]", formData.email);
     formDataObj.append("entry.[YOUR-COMPANY-ENTRY-ID]", formData.company);
+    formDataObj.append("entry.[YOUR-COMPANY-URL-ENTRY-ID]", formData.companyUrl);
     formDataObj.append("entry.[YOUR-MESSAGE-ENTRY-ID]", formData.message);
 
     try {
@@ -42,7 +44,7 @@ const ContactForm = () => {
       });
       
       // Clear form
-      setFormData({ name: "", email: "", company: "", message: "" });
+      setFormData({ name: "", email: "", company: "", companyUrl: "", message: "" });
     } catch (error) {
       toast({
         title: "Something went wrong",
@@ -88,16 +90,29 @@ const ContactForm = () => {
               />
             </div>
           </div>
-          <div>
-            <label className="block text-sm font-medium mb-2">Company</label>
-            <Input
-              required
-              value={formData.company}
-              onChange={(e) =>
-                setFormData({ ...formData, company: e.target.value })
-              }
-              placeholder="Your Company"
-            />
+          <div className="grid md:grid-cols-2 gap-6">
+            <div>
+              <label className="block text-sm font-medium mb-2">Company</label>
+              <Input
+                required
+                value={formData.company}
+                onChange={(e) =>
+                  setFormData({ ...formData, company: e.target.value })
+                }
+                placeholder="Your Company"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium mb-2">Company Website</label>
+              <Input
+                type="url"
+                value={formData.companyUrl}
+                onChange={(e) =>
+                  setFormData({ ...formData, companyUrl: e.target.value })
+                }
+                placeholder="https://example.com"
+              />
+            </div>
           </div>
           <div>
             <label className="block text-sm font-medium mb-2">Message</label>
