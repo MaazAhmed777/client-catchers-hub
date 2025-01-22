@@ -9,11 +9,11 @@ const Hero = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-sage-50 to-sage-100 opacity-50" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#F1F0FB] to-[#D6BCFA] opacity-50" />
       
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <span className="inline-block mb-4 px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium fade-in">
-          Level Up Your Marketing Game
+          Transform Your Marketing with Optireach
         </span>
         
         <h1 className="text-4xl md:text-6xl font-bold mb-6 slide-up">
