@@ -22,6 +22,21 @@ const CaseStudies = () => {
       spend: "$17,500 monthly",
       region: "South Florida",
       path: "/case-studies/brooks-moving"
+    },
+    {
+      client: "Mountain Movers",
+      industry: "Moving Services",
+      result: "19.8% Click-to-Conversion Rate",
+      description: "Targeted campaigns in high-performing regions of Austin, Texas, leading to significant improvements in conversion rates and order value.",
+      metrics: [
+        "39% Lead to Job conversion",
+        "31% increase in AOV",
+        "$68 CPL",
+        "Form & Call tracking"
+      ],
+      spend: "$8,500 monthly",
+      region: "Austin, Texas",
+      path: "/case-studies/mountain-movers"
     }
   ];
 
