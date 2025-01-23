@@ -20,8 +20,7 @@ const CaseStudies = () => {
       ],
       website: "https://brooksmovingandhauling.com/",
       spend: "$17,500 monthly",
-      region: "South Florida",
-      path: "/case-studies/brooks-moving"
+      region: "South Florida"
     },
     {
       client: "Mountain Movers",
@@ -37,6 +36,22 @@ const CaseStudies = () => {
       spend: "$8,500 monthly",
       region: "Austin, Texas",
       path: "/case-studies/mountain-movers"
+    },
+    {
+      client: "RV for America",
+      industry: "RV Rentals",
+      result: "23% Click-to-Conversion Rate",
+      description: "Executed targeted campaigns in Jupiter, Florida, achieving exceptional booking conversion rates and improved order values.",
+      metrics: [
+        "54% Lead to Booking conversion",
+        "17% increase in AOV",
+        "$87 CPL",
+        "Form & Call tracking"
+      ],
+      website: "https://rvforamerica.com/",
+      spend: "$4,000 monthly",
+      region: "Jupiter, Florida",
+      path: "/case-studies/rv-for-america"
     }
   ];
 
@@ -95,14 +110,25 @@ const CaseStudies = () => {
                   </div>
                 )}
                 
-                <Button 
-                  variant="link" 
-                  className="group"
-                  onClick={() => study.path && navigate(study.path)}
-                >
-                  View Case Study
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Button>
+                {study.path ? (
+                  <Button 
+                    variant="link" 
+                    className="group"
+                    onClick={() => navigate(study.path)}
+                  >
+                    View Case Study
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Button>
+                ) : (
+                  <Button 
+                    variant="link" 
+                    className="group opacity-50 cursor-not-allowed"
+                    disabled
+                  >
+                    Case Study Coming Soon
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                )}
               </Card>
             ))}
           </div>
