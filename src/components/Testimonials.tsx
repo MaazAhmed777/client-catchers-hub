@@ -16,7 +16,7 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           <Card className="p-8 hover-lift">
             <div className="flex flex-col gap-8">
               <div>
@@ -83,42 +83,6 @@ const Testimonials = () => {
                 <div className="space-y-2 text-sm text-gray-600">
                   <p>• Monthly Campaign Spend: $8,500</p>
                   <p>• Region: Austin, Texas</p>
-                  <p>• Conversion Tracking: Forms & Calls</p>
-                </div>
-              </div>
-            </div>
-          </Card>
-
-          <Card className="p-8 hover-lift">
-            <div className="flex flex-col gap-8">
-              <div>
-                <div className="mb-4">
-                  <h3 className="text-xl font-semibold mb-2">RV for America</h3>
-                  <p className="text-gray-500">RV Rentals</p>
-                </div>
-                
-                <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div>
-                    <p className="text-2xl font-bold text-primary">23%</p>
-                    <p className="text-sm text-gray-600">Click-to-Conversion Rate</p>
-                  </div>
-                  <div>
-                    <p className="text-2xl font-bold text-primary">54%</p>
-                    <p className="text-sm text-gray-600">Lead to Booking Conversion</p>
-                  </div>
-                  <div>
-                    <p className="text-2xl font-bold text-primary">17%</p>
-                    <p className="text-sm text-gray-600">Increase in AOV</p>
-                  </div>
-                  <div>
-                    <p className="text-2xl font-bold text-primary">$87</p>
-                    <p className="text-sm text-gray-600">Cost Per Lead</p>
-                  </div>
-                </div>
-
-                <div className="space-y-2 text-sm text-gray-600">
-                  <p>• Monthly Campaign Spend: $4,000</p>
-                  <p>• Region: Jupiter, Florida</p>
                   <p>• Conversion Tracking: Forms & Calls</p>
                 </div>
               </div>
