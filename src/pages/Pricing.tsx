@@ -14,7 +14,7 @@ import ContactForm from "@/components/ContactForm";
 const packages = [
   {
     name: "Starter",
-    price: "To be decided",
+    price: "999",
     description: "Perfect for small businesses just getting started",
     features: [
       "Single Platform Marketing",
@@ -26,7 +26,7 @@ const packages = [
   },
   {
     name: "Professional",
-    price: "To be decided",
+    price: "1,999",
     description: "Ideal for growing businesses seeking expansion",
     features: [
       "Dual Platform Marketing",
@@ -40,7 +40,7 @@ const packages = [
   },
   {
     name: "Enterprise",
-    price: "To be decided",
+    price: "Contact Sales",
     description: "Comprehensive solution for established businesses",
     features: [
       "Multi-Platform Marketing",
@@ -88,8 +88,14 @@ const Pricing = () => {
               </CardHeader>
               <CardContent>
                 <div className="mb-4">
-                  <span className="text-4xl font-bold">${pkg.price}</span>
-                  <span className="text-gray-600">/month</span>
+                  {pkg.price === "Contact Sales" ? (
+                    <span className="text-4xl font-bold">{pkg.price}</span>
+                  ) : (
+                    <>
+                      <span className="text-4xl font-bold">${pkg.price}</span>
+                      <span className="text-gray-600">/month</span>
+                    </>
+                  )}
                 </div>
                 <ul className="space-y-3">
                   {pkg.features.map((feature) => (
