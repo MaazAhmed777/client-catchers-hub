@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, BarChart, Globe, LineChart, Mail, Target, Users } from "lucide-react";
+import { ArrowRight, Target, Users, LineChart, BarChart } from "lucide-react";
 
 const Services = () => {
   const services = [
@@ -10,19 +10,9 @@ const Services = () => {
       description: "Strategic paid advertising campaigns across multiple platforms to drive qualified traffic and conversions.",
     },
     {
-      icon: <Globe className="h-8 w-8 text-primary" />,
-      title: "SEO Optimization",
-      description: "Comprehensive search engine optimization to improve organic visibility and rankings.",
-    },
-    {
       icon: <Users className="h-8 w-8 text-primary" />,
       title: "Social Media Marketing",
       description: "Engaging social media strategies to build brand awareness and community engagement.",
-    },
-    {
-      icon: <Mail className="h-8 w-8 text-primary" />,
-      title: "Email Marketing",
-      description: "Targeted email campaigns that nurture leads and drive conversions.",
     },
     {
       icon: <LineChart className="h-8 w-8 text-primary" />,
@@ -52,7 +42,7 @@ const Services = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {services.map((service, index) => (
               <Card key={index} className="p-8 glass-card hover-lift">
                 <div className="mb-6">{service.icon}</div>

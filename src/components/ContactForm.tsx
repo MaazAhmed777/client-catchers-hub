@@ -19,29 +19,25 @@ const ContactForm = () => {
     
     const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfhZ2NX6NyIX60KcUUL1j-l1zxO226F_5yPAMCJaU4LOqip-Q/formResponse";
     
-    // Create form data object with the correct entry IDs from your form
     const formDataObj = new FormData();
-    formDataObj.append("entry.1234567890", formData.name); // Replace with actual entry ID for name
-    formDataObj.append("entry.1234567891", formData.email); // Replace with actual entry ID for email
-    formDataObj.append("entry.1234567892", formData.company); // Replace with actual entry ID for company
-    formDataObj.append("entry.1234567893", formData.companyUrl); // Replace with actual entry ID for company URL
-    formDataObj.append("entry.1234567894", formData.message); // Replace with actual entry ID for message
+    formDataObj.append("entry.1234567890", formData.name);
+    formDataObj.append("entry.1234567891", formData.email);
+    formDataObj.append("entry.1234567892", formData.company);
+    formDataObj.append("entry.1234567893", formData.companyUrl);
+    formDataObj.append("entry.1234567894", formData.message);
 
     try {
-      // Submit to Google Form
       await fetch(googleFormUrl, {
         method: "POST",
         mode: "no-cors",
         body: formDataObj,
       });
 
-      // Show success message
       toast({
         title: "Thanks for reaching out!",
         description: "We'll get back to you within 24 hours.",
       });
       
-      // Clear form
       setFormData({ name: "", email: "", company: "", companyUrl: "", message: "" });
     } catch (error) {
       toast({

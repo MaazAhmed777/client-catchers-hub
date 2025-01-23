@@ -29,19 +29,19 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <Link to="/" className="text-xl font-bold text-primary">
+        <div className="flex justify-between items-center h-20">
+          <Link to="/" className="text-2xl font-bold text-primary">
             Optireach
           </Link>
 
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 to={link.path}
-                className={`transition-colors hover:text-primary ${
+                className={`text-lg transition-colors hover:text-primary ${
                   location.pathname === link.path
-                    ? "text-primary font-medium"
+                    ? "text-primary font-medium border-b-2 border-primary"
                     : "text-gray-600"
                 }`}
               >
@@ -59,14 +59,14 @@ const Navbar = () => {
         </div>
 
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4">
+          <div className="md:hidden py-4 bg-white shadow-lg rounded-lg mt-2">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 to={link.path}
-                className={`block py-2 transition-colors hover:text-primary ${
+                className={`block py-3 px-4 transition-colors hover:bg-primary/10 ${
                   location.pathname === link.path
-                    ? "text-primary font-medium"
+                    ? "text-primary font-medium bg-primary/5"
                     : "text-gray-600"
                 }`}
                 onClick={() => setIsMobileMenuOpen(false)}

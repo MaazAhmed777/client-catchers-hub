@@ -14,40 +14,41 @@ import ContactForm from "@/components/ContactForm";
 const packages = [
   {
     name: "Starter",
-    price: "999",
+    price: "To be decided",
     description: "Perfect for small businesses just getting started",
     features: [
+      "Single Platform Marketing",
       "Social Media Management",
-      "Basic SEO Optimization",
       "Monthly Performance Report",
-      "Email Support"
+      "Email Support",
+      "Platform: Choose one from (Meta, Google Ads, or LinkedIn)"
     ]
   },
   {
     name: "Professional",
-    price: "1,999",
+    price: "To be decided",
     description: "Ideal for growing businesses seeking expansion",
     features: [
-      "Everything in Starter",
-      "Advanced SEO Strategies",
+      "Dual Platform Marketing",
+      "Advanced Marketing Strategies",
       "Content Marketing",
       "Weekly Performance Reports",
       "Priority Support",
-      "Google Ads Management"
+      "Platforms: Choose two from (Meta, Google Ads, LinkedIn)"
     ],
     popular: true
   },
   {
     name: "Enterprise",
-    price: "3,999",
+    price: "To be decided",
     description: "Comprehensive solution for established businesses",
     features: [
-      "Everything in Professional",
+      "Multi-Platform Marketing",
       "Custom Marketing Strategy",
       "Dedicated Account Manager",
       "Daily Performance Tracking",
       "24/7 Priority Support",
-      "Social Media Ads Management",
+      "All Available Platforms (Meta, Google Ads, LinkedIn)",
       "Conversion Rate Optimization"
     ]
   }
