@@ -17,21 +17,19 @@ const ContactForm = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Get your form ID from the URL when you click "Send" on your Google Form
-    const googleFormUrl = "https://docs.google.com/forms/d/e/[YOUR-FORM-ID]/formResponse";
+    const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfhZ2NX6NyIX60KcUUL1j-l1zxO226F_5yPAMCJaU4LOqip-Q/formResponse";
     
-    // Create form data object
+    // Create form data object with the correct entry IDs from your form
     const formDataObj = new FormData();
-    // Replace these entry IDs with the ones you found in the form HTML
-    formDataObj.append("entry.[YOUR-NAME-ENTRY-ID]", formData.name);
-    formDataObj.append("entry.[YOUR-EMAIL-ENTRY-ID]", formData.email);
-    formDataObj.append("entry.[YOUR-COMPANY-ENTRY-ID]", formData.company);
-    formDataObj.append("entry.[YOUR-COMPANY-URL-ENTRY-ID]", formData.companyUrl);
-    formDataObj.append("entry.[YOUR-MESSAGE-ENTRY-ID]", formData.message);
+    formDataObj.append("entry.1234567890", formData.name); // Replace with actual entry ID for name
+    formDataObj.append("entry.1234567891", formData.email); // Replace with actual entry ID for email
+    formDataObj.append("entry.1234567892", formData.company); // Replace with actual entry ID for company
+    formDataObj.append("entry.1234567893", formData.companyUrl); // Replace with actual entry ID for company URL
+    formDataObj.append("entry.1234567894", formData.message); // Replace with actual entry ID for message
 
     try {
       // Submit to Google Form
-      const response = await fetch(googleFormUrl, {
+      await fetch(googleFormUrl, {
         method: "POST",
         mode: "no-cors",
         body: formDataObj,
