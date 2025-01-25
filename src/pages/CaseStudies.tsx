@@ -37,6 +37,22 @@ const CaseStudies = () => {
       spend: "$8,500 monthly",
       region: "Austin, Texas",
       path: "/case-studies/mountain-movers"
+    },
+    {
+      client: "RV for America",
+      industry: "RV Rentals",
+      result: "23% Click-to-Conversion Rate",
+      description: "Implemented targeted campaigns in Jupiter, Florida, resulting in significant improvements in booking rates and average order value.",
+      metrics: [
+        "54% Lead to Booking conversion",
+        "17% increase in AOV",
+        "$87 CPL",
+        "Form & Call tracking"
+      ],
+      website: "https://rvforamerica.com/",
+      spend: "$4,000 monthly",
+      region: "Jupiter, Florida",
+      path: "/case-studies/rv-for-america"
     }
   ];
 
