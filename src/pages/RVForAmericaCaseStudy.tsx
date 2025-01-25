@@ -39,26 +39,19 @@ const RVForAmericaCaseStudy = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <h3 className="font-medium text-gray-700 mb-2">Industry</h3>
-                <p className="text-gray-600">RV Rentals & Tourism</p>
+                <p className="text-gray-600">RV Rentals</p>
               </div>
               <div>
                 <h3 className="font-medium text-gray-700 mb-2">Region</h3>
                 <p className="text-gray-600">Jupiter, Florida</p>
               </div>
               <div>
-                <h3 className="font-medium text-gray-700 mb-2">Website</h3>
-                <a 
-                  href="https://rvforamerica.com/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline"
-                >
-                  rvforamerica.com
-                </a>
-              </div>
-              <div>
                 <h3 className="font-medium text-gray-700 mb-2">Monthly Campaign Spend</h3>
                 <p className="text-gray-600">$4,000</p>
+              </div>
+              <div>
+                <h3 className="font-medium text-gray-700 mb-2">Conversion Tracking</h3>
+                <p className="text-gray-600">Forms & Calls</p>
               </div>
             </div>
           </div>
@@ -91,7 +84,7 @@ const RVForAmericaCaseStudy = () => {
             <div className="glass-card rounded-lg p-8">
               <h2 className="text-2xl font-semibold mb-4">Challenge</h2>
               <p className="text-gray-600 leading-relaxed">
-                RV for America needed to establish a stronger digital presence in the Jupiter, Florida area while maintaining profitable customer acquisition costs. The main challenges included:
+                RV for America faced several challenges in the competitive Florida RV rental market:
               </p>
               <ul className="list-disc list-inside mt-4 space-y-2 text-gray-600">
                 <li>High competition in the Florida RV rental market</li>
@@ -142,7 +135,7 @@ const RVForAmericaCaseStudy = () => {
                   <TableRow>
                     <TableCell>Click-to-Conversion Rate</TableCell>
                     <TableCell>23%</TableCell>
-                    <TableCell>Significantly above industry average, indicating highly targeted traffic</TableCell>
+                    <TableCell>Above industry average, indicating effective targeting</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell>Lead-to-Booking Conversion</TableCell>
@@ -175,7 +168,7 @@ const RVForAmericaCaseStudy = () => {
                 <li>Achieve high conversion rates in a competitive market</li>
                 <li>Maintain profitable customer acquisition costs while scaling</li>
                 <li>Successfully target and convert high-value customers</li>
-                <li>Create a predictable lead generation system for rental businesses</li>
+                <li>Create a predictable lead generation system for RV rental businesses</li>
               </ul>
             </div>
           </div>
