@@ -38,7 +38,7 @@ const Stats = () => {
               <XAxis dataKey="month" />
               <YAxis />
               <Tooltip />
-              <Bar dataKey="roi" fill="#8a9a5b" />
+              <Bar dataKey="roi" fill="#22223b" />
             </BarChart>
           </ResponsiveContainer>
         </div>

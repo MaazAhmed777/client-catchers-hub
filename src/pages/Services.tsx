@@ -1,13 +1,23 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Target, Users, LineChart, BarChart } from "lucide-react";
+import { ArrowRight, Target, Users, LineChart, BarChart, AppWindow, Smartphone } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
+      icon: <Smartphone className="h-8 w-8 text-primary" />,
+      title: "Android Marketing",
+      description: "We create a custom strategy for your android app and help you get more downloads and purchases.",
+    },
+    {
       icon: <Target className="h-8 w-8 text-primary" />,
-      title: "PPC Advertising",
-      description: "Strategic paid advertising campaigns across multiple platforms to drive qualified traffic and conversions.",
+      title: "IOS Marketing",
+      description: "We create a custom strategy for your ios app and help you get more downloads and purchases.",
+    },
+    {
+      icon: <AppWindow className="h-8 w-8 text-primary" />,
+      title: "Web Marketing",
+      description: "We help you reach your target audience on the web. We create a custom strategy for your website and help you get more visitors and conversions.",
     },
     {
       icon: <Users className="h-8 w-8 text-primary" />,

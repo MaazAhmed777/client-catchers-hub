@@ -18,17 +18,13 @@ const Navbar = () => {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "Services", path: "/services" },
-    { name: "Case Studies", path: "/case-studies" },
+    // { name: "Case Studies", path: "/case-studies" },
     { name: "Pricing", path: "/pricing" },
   ];
 
   return (
-    <nav
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/80 backdrop-blur-sm shadow-sm" : "bg-transparent"
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="fixed top-0 left-0 w-full z-50">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 backdrop-blur-sm transition-all duration-300">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="text-2xl font-bold text-primary">
             Optireach

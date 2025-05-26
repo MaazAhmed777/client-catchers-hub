@@ -21,34 +21,34 @@ const Testimonials = () => {
             <div className="flex flex-col gap-8">
               <div>
                 <div className="mb-4">
-                  <h3 className="text-xl font-semibold mb-2">Brooks Moving and Hauling</h3>
-                  <p className="text-gray-500">Relocations & Moving Services</p>
+                  <h3 className="text-2xl font-semibold mb-2">Android Marketing</h3>
+                  {/* <p className="text-gray-500">Relocations & Moving Services</p> */}
                 </div>
                 
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div>
-                    <p className="text-2xl font-bold text-primary">31.2%</p>
-                    <p className="text-sm text-gray-600">Click-to-Conversion Rate</p>
+                    <p className="text-2xl font-bold text-primary">$373K</p>
+                    <p className="text-sm text-gray-600">Budget Spent</p>
                   </div>
                   <div>
-                    <p className="text-2xl font-bold text-primary">44%</p>
-                    <p className="text-sm text-gray-600">Lead to Job Conversion</p>
+                    <p className="text-2xl font-bold text-primary">$43.7</p>
+                    <p className="text-sm text-gray-600">Cost per conversion</p>
                   </div>
                   <div>
-                    <p className="text-2xl font-bold text-primary">23%</p>
-                    <p className="text-sm text-gray-600">Increase in AOV</p>
+                    <p className="text-2xl font-bold text-primary">0.88</p>
+                    <p className="text-sm text-gray-600">Average ROAS</p>
                   </div>
-                  <div>
+                  {/* <div>
                     <p className="text-2xl font-bold text-primary">$105</p>
                     <p className="text-sm text-gray-600">Cost Per Lead</p>
-                  </div>
+                  </div> */}
                 </div>
 
-                <div className="space-y-2 text-sm text-gray-600">
+                {/* <div className="space-y-2 text-sm text-gray-600">
                   <p>• Monthly Campaign Spend: $17,500</p>
                   <p>• Region: South Florida</p>
                   <p>• Conversion Tracking: Forms & Calls</p>
-                </div>
+                </div> */}
               </div>
             </div>
           </Card>
@@ -57,70 +57,70 @@ const Testimonials = () => {
             <div className="flex flex-col gap-8">
               <div>
                 <div className="mb-4">
-                  <h3 className="text-xl font-semibold mb-2">Mountain Movers</h3>
-                  <p className="text-gray-500">Moving Services</p>
+                  <h3 className="text-2xl font-semibold mb-2">Web Marketing</h3>
+                  {/* <p className="text-gray-500">RV Rentals</p> */}
                 </div>
                 
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div>
-                    <p className="text-2xl font-bold text-primary">19.8%</p>
-                    <p className="text-sm text-gray-600">Click-to-Conversion Rate</p>
+                    <p className="text-2xl font-bold text-primary">$1.05M</p>
+                    <p className="text-sm text-gray-600">Budget Spent</p>
                   </div>
                   <div>
-                    <p className="text-2xl font-bold text-primary">39%</p>
-                    <p className="text-sm text-gray-600">Lead to Job Conversion</p>
+                    <p className="text-2xl font-bold text-primary">$51.5</p>
+                    <p className="text-sm text-gray-600">Cost per conversion</p>
                   </div>
                   <div>
-                    <p className="text-2xl font-bold text-primary">31%</p>
-                    <p className="text-sm text-gray-600">Increase in AOV</p>
+                    <p className="text-2xl font-bold text-primary">0.85</p>
+                    <p className="text-sm text-gray-600">Average ROAS</p>
                   </div>
-                  <div>
-                    <p className="text-2xl font-bold text-primary">$68</p>
-                    <p className="text-sm text-gray-600">Cost Per Lead</p>
-                  </div>
-                </div>
-
-                <div className="space-y-2 text-sm text-gray-600">
-                  <p>• Monthly Campaign Spend: $8,500</p>
-                  <p>• Region: Austin, Texas</p>
-                  <p>• Conversion Tracking: Forms & Calls</p>
-                </div>
-              </div>
-            </div>
-          </Card>
-
-          <Card className="p-8 hover-lift">
-            <div className="flex flex-col gap-8">
-              <div>
-                <div className="mb-4">
-                  <h3 className="text-xl font-semibold mb-2">RV for America</h3>
-                  <p className="text-gray-500">RV Rentals</p>
-                </div>
-                
-                <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div>
-                    <p className="text-2xl font-bold text-primary">23%</p>
-                    <p className="text-sm text-gray-600">Click-to-Conversion Rate</p>
-                  </div>
-                  <div>
-                    <p className="text-2xl font-bold text-primary">54%</p>
-                    <p className="text-sm text-gray-600">Lead to Booking Conversion</p>
-                  </div>
-                  <div>
-                    <p className="text-2xl font-bold text-primary">17%</p>
-                    <p className="text-sm text-gray-600">Increase in AOV</p>
-                  </div>
-                  <div>
+                  {/* <div>
                     <p className="text-2xl font-bold text-primary">$87</p>
                     <p className="text-sm text-gray-600">Cost Per Lead</p>
-                  </div>
+                  </div> */}
                 </div>
 
-                <div className="space-y-2 text-sm text-gray-600">
+                {/* <div className="space-y-2 text-sm text-gray-600">
                   <p>• Monthly Campaign Spend: $4,000</p>
                   <p>• Region: Jupiter, Florida</p>
                   <p>• Conversion Tracking: Forms & Calls</p>
+                </div> */}
+              </div>
+            </div>
+          </Card>
+
+          <Card className="p-8 hover-lift">
+            <div className="flex flex-col gap-8">
+              <div>
+                <div className="mb-4">
+                  <h3 className="text-2xl font-semibold mb-2">IOS Marketing</h3>
+                  {/* <p className="text-gray-500">Moving Services</p> */}
                 </div>
+                
+                <div className="grid grid-cols-2 gap-4 mb-6">
+                  <div>
+                    <p className="text-2xl font-bold text-primary">$270K</p>
+                    <p className="text-sm text-gray-600">Budget Spent</p>
+                  </div>
+                  <div>
+                    <p className="text-2xl font-bold text-primary">$47.1</p>
+                    <p className="text-sm text-gray-600">Cost per conversion</p>
+                  </div>
+                  <div>
+                    <p className="text-2xl font-bold text-primary">0.85</p>
+                    <p className="text-sm text-gray-600">Average ROAS</p>
+                  </div>
+                  {/* <div>
+                    <p className="text-2xl font-bold text-primary">$68.1</p>
+                    <p className="text-sm text-gray-600">Cost Per Lead</p>
+                  </div> */}
+                </div>
+
+                {/* <div className="space-y-2 text-sm text-gray-600">
+                  <p>• Monthly Campaign Spend: $8,500</p>
+                  <p>• Region: Austin, Texas</p>
+                  <p>• Conversion Tracking: Forms & Calls</p>
+                </div> */}
               </div>
             </div>
           </Card>
