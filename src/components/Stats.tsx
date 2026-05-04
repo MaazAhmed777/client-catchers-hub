@@ -1,46 +1,36 @@
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { Card } from './ui/card';
 
-const data = [
-  { month: 'Jan', roi: 320 },
-  { month: 'Feb', roi: 350 },
-  { month: 'Mar', roi: 420 },
-  { month: 'Apr', roi: 460 },
-  { month: 'May', roi: 520 },
-  { month: 'Jun', roi: 580 },
+const metrics = [
+  { value: "3.2x", label: "Average ROAS", sub: "across subscription clients" },
+  { value: "47%", label: "Trial-to-Paid Lift", sub: "average improvement" },
+  { value: "31%", label: "Churn Reduction", sub: "within first 90 days" },
+  { value: "$2.4M+", label: "Ad Spend Managed", sub: "for subscription products" },
 ];
 
 const Stats = () => {
   return (
-    <section className="py-20 bg-sage-50">
+    <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center mb-12">Our Performance Metrics</h2>
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
-          <Card className="p-6 text-center glass-card">
-            <h3 className="text-4xl font-bold text-primary mb-2">250%</h3>
-            <p className="text-gray-600">Average ROI</p>
-          </Card>
-          <Card className="p-6 text-center glass-card">
-            <h3 className="text-4xl font-bold text-primary mb-2">1.2M+</h3>
-            <p className="text-gray-600">Ad Spend Managed</p>
-          </Card>
-          <Card className="p-6 text-center glass-card">
-            <h3 className="text-4xl font-bold text-primary mb-2">98%</h3>
-            <p className="text-gray-600">Client Retention</p>
-          </Card>
+        <div className="text-center mb-12">
+          <span className="inline-block mb-4 px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">
+            By The Numbers
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Results That Compound
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            We don't optimize for vanity metrics. Every dollar is tied to LTV, trial conversion, and retained revenue.
+          </p>
         </div>
-        
-        <div className="h-[400px] glass-card p-6">
-          <h3 className="text-xl font-semibold mb-6">Client ROI Growth</h3>
-          <ResponsiveContainer width="100%" height="100%">
-            <BarChart data={data}>
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="month" />
-              <YAxis />
-              <Tooltip />
-              <Bar dataKey="roi" fill="#8a9a5b" />
-            </BarChart>
-          </ResponsiveContainer>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {metrics.map((metric) => (
+            <Card key={metric.label} className="p-8 text-center hover-lift border-0 shadow-md">
+              <h3 className="text-4xl md:text-5xl font-bold gradient-text mb-2">{metric.value}</h3>
+              <p className="text-lg font-semibold text-slate-800 mb-1">{metric.label}</p>
+              <p className="text-sm text-gray-500">{metric.sub}</p>
+            </Card>
+          ))}
         </div>
       </div>
     </section>
